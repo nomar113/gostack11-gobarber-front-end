@@ -10,6 +10,7 @@ const ToastContainer: React.FC = () => {
         <FiAlertCircle />
         <div>
           <strong>Aconteceu um erro</strong>
+          <p>Não foi possível fazer login na aplicação</p>
         </div>
         <button type="button">
           <FiXCircle size={18} />
