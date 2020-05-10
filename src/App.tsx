@@ -4,8 +4,6 @@ import GlobalStyle from './styles/global';
 import SignIn from './pages/SignIn/index';
 import SignUp from './pages/SignUp/index';
 
-import ToastContainer from './component/ToastContainer';
-
 import AppProvider from './hooks';
 
 const App: React.FC = () => {
@@ -14,7 +12,6 @@ const App: React.FC = () => {
       <AppProvider>
         <SignIn />
       </AppProvider>
-      <ToastContainer />
       <GlobalStyle />
     </>
   );
