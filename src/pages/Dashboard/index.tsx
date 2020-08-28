@@ -11,6 +11,8 @@ import {
   Content,
   Schedule,
   NextAppointment,
+  Section,
+  Appointment,
   Calendar,
 } from './styles';
 
@@ -60,6 +62,38 @@ const Dashboard: React.FC = () => {
               </span>
             </div>
           </NextAppointment>
+
+          <Section>
+            <strong>Manhã</strong>
+            <Appointment>
+              <span>
+                <FiClock /> 08:00
+              </span>
+
+              <div>
+                <img
+                  src="https://avatars2.githubusercontent.com/u/34141267?s=460&u=3d13ddaaf7d1aff4711edde9c860a80fc67c284f&v=4"
+                  alt="Ramon Mesquita"
+                />
+                <strong>Ramon Mesquita</strong>
+              </div>
+            </Appointment>
+          </Section>
+          <Section>
+            <strong>Tarde</strong>
+            <Appointment>
+              <span>
+                <FiClock /> 08:00
+              </span>
+              <div>
+                <img
+                  src="https://avatars2.githubusercontent.com/u/34141267?s=460&u=3d13ddaaf7d1aff4711edde9c860a80fc67c284f&v=4"
+                  alt="Ramon Mesquita"
+                />
+                <strong>Ramon Mesquita</strong>
+              </div>
+            </Appointment>
+          </Section>
         </Schedule>
         <Calendar />
       </Content>
