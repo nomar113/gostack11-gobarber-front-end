@@ -34,6 +34,7 @@ interface Appointment {
   user: {
     name: string;
     avatar: string;
+    avatar_url: string;
   };
 }
 
@@ -138,7 +139,7 @@ const Dashboard: React.FC = () => {
           <img src={logoImg} alt="GoBarber" />
 
           <Profile>
-            <img src={user.avatar} alt={user.name} />
+            <img src={user.avatar_url} alt={user.name} />
             <div>
               <span>Bem vindo,</span>
               <Link to="/profile">
@@ -166,7 +167,7 @@ const Dashboard: React.FC = () => {
               <strong>Agendamento a seguir</strong>
               <div>
                 <img
-                  src={nextAppointment.user.avatar}
+                  src={nextAppointment.user.avatar_url}
                   alt={nextAppointment.user.name}
                 />
 
@@ -195,7 +196,7 @@ const Dashboard: React.FC = () => {
 
                 <div>
                   <img
-                    src={appointment.user.avatar}
+                    src={appointment.user.avatar_url}
                     alt={appointment.user.name}
                   />
                   <strong>{appointment.user.name}</strong>
@@ -219,7 +220,7 @@ const Dashboard: React.FC = () => {
 
                 <div>
                   <img
-                    src={appointment.user.avatar}
+                    src={appointment.user.avatar_url}
                     alt={appointment.user.name}
                   />
                   <strong>{appointment.user.name}</strong>
